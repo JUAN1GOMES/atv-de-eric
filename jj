@@ -1,0 +1,149 @@
+```html id="simple1"
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cantinho da Vó Rosa</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#f6d365, #fda085);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #8b0000;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .details {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #8b0000;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background: #8b0000;
+  color: white;
+}
+</style>
+
+<script>
+function abrir(card) {
+  card.classList.toggle("active");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Cantinho da Vó Rosa</h1>
+  <p>Comida caseira de verdade</p>
+</header>
+
+<div class="container">
+
+<div class="card" onclick="abrir(this)">
+  <h2>Feijoada</h2>
+  <p>R$ 35,00</p>
+  <div class="details">
+    <ul>
+      <li>Feijão preto</li>
+      <li>Carne seca</li>
+      <li>Linguiça</li>
+    </ul>
+    <table>
+      <tr><th>Calorias</th><th>Porção</th></tr>
+      <tr><td>800</td><td>500g</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card" onclick="abrir(this)">
+  <h2>Frango Assado</h2>
+  <p>R$ 28,00</p>
+  <div class="details">
+    <ul>
+      <li>Frango</li>
+      <li>Batata</li>
+      <li>Arroz</li>
+    </ul>
+    <table>
+      <tr><th>Calorias</th><th>Porção</th></tr>
+      <tr><td>600</td><td>400g</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card" onclick="abrir(this)">
+  <h2>Lasanha</h2>
+  <p>R$ 30,00</p>
+  <div class="details">
+    <ul>
+      <li>Massa</li>
+      <li>Carne</li>
+      <li>Queijo</li>
+    </ul>
+    <table>
+      <tr><th>Calorias</th><th>Porção</th></tr>
+      <tr><td>700</td><td>450g</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card" onclick="abrir(this)">
+  <h2>Peixe Grelhado</h2>
+  <p>R$ 32,00</p>
+  <div class="details">
+    <ul>
+      <li>Peixe</li>
+      <li>Limão</li>
+      <li>Legumes</li>
+    </ul>
+    <table>
+      <tr><th>Calorias</th><th>Porção</th></tr>
+      <tr><td>500</td><td>400g</td></tr>
+    </table>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
