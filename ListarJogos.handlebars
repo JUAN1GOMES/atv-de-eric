@@ -1,0 +1,8 @@
+<h1>{{Jogos.nome}} ({{Jogos.funcao}})</h1>
+
+<label>Devs:</label>
+<ul>
+  {{#each Jogos.Devs}}
+    <li><a href="/Jogo/{{this.id}}">{{this.nome}}</a></li>
+  {{/each}}
+</ul>
