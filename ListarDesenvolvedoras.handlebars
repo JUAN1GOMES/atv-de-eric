@@ -1,0 +1,11 @@
+<h1>desenvolvedores</h1>
+
+<a href="/devs/cadastrar">Cadastrar novo artista</a>
+
+<ul>
+  {{#each Devs}}
+    <li>
+      <a href="/Devs/{{this.id}}">{{this.nome}}</a>
+    </li>
+  {{/each}}
+</ul>

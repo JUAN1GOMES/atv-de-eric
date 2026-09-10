@@ -1,0 +1,11 @@
+<h1>Gêneros de jogos</h1>
+
+<a href="/genero/cadastrar">Cadastrar novo gênero</a>
+
+<ul>
+  {{#each artistas}}
+    <li>
+      <a href="/genero/{{this.id}}">{{this.nome}}</a>
+    </li>
+  {{/each}}
+</ul>
